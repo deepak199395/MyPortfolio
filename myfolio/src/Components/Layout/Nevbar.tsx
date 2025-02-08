@@ -12,9 +12,8 @@ const Nevbar: React.FC = () => {
         <li>  <Link to="/" onClick={()=>setMenuOpen(false)}>Home</Link></li>
         <li>  <Link to="/education"  onClick={()=>setMenuOpen(false)}>Education</Link></li>
         <li>  <Link to="/projects"  onClick={()=>setMenuOpen(false)}>Projects</Link></li>
-        <li>  <Link to="/experience"  onClick={()=>setMenuOpen(false)}>About</Link></li>
-        <li>  <Link to="/contacts"  onClick={()=>setMenuOpen(false)}>Contacts</Link></li>
         <li>  <Link to="/about"  onClick={()=>setMenuOpen(false)}>About</Link></li>
+        <li>  <Link to="/contacts"  onClick={()=>setMenuOpen(false)}>Contacts</Link></li>
 
       </ul>
 
