@@ -4,15 +4,12 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
-import "../Styles/Experience.css"; // Import CSS file
-import { motion } from "framer-motion"; // Import Framer Motion for animations
+import "../Styles/Experience.css";
+import { motion } from "framer-motion";
 import CardMedia from "@mui/material/CardMedia/CardMedia";
-
-
 import ibmLogo from "../Assets/ibm-logo-2.png";
 import quessLogo from "../Assets/Quess.jpeg";
 import aspLogo from "../Assets/aps.jpeg";
-
 
 const experiences = [
   {
@@ -33,20 +30,16 @@ const experiences = [
     company: "ASP Tradelinks",
     role: "Frontend Developer",
     description: "Developed responsive web applications using React.",
-    image:aspLogo ,
-
+    image: aspLogo,
   },
-  
 ];
-
-
 const Experience = () => {
   return (
     <div className="MainContainer">
-      <motion.h2 
+      <motion.h2
         className="title"
-        initial={{ opacity: 0, y: -20 }} 
-        animate={{ opacity: 1, y: 0 }} 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
         My Experience
@@ -54,16 +47,16 @@ const Experience = () => {
 
       <div className="expBox">
         {experiences.map((exp, index) => (
-          <motion.div 
+          <motion.div
             key={index}
             className="cardContainer"
-            initial={{ opacity: 0, y: 50 }} 
-            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             whileHover={{ scale: 1.05 }}
           >
             <Card className="expCard">
-            <CardMedia
+              <CardMedia
                 component="img"
                 alt={exp.company}
                 height="140"
@@ -85,5 +78,4 @@ const Experience = () => {
     </div>
   );
 };
-
 export default Experience;
